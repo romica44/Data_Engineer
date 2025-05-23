@@ -49,7 +49,7 @@ Sistema robusto y escalable desarrollado para una cadena de tiendas de comestibl
 ### **1. Decisiones Arquitectónicas**
 
 #### **Patrón Singleton para Conexión de BD**
-
+```python
 class DatabaseConnection:
     _instance = None
     
@@ -81,14 +81,15 @@ Justificación: Protege la integridad de los datos y permite validación en tiem
 Uso de Decimal para Montos
 pythonself.__price = Decimal(str(price))
 Justificación: Evita errores de precisión en cálculos financieros que ocurren con float.
-2. Decisiones de Base de Datos
-Normalización Completa
+
+###2. Decisiones de Base de Datos
+###Normalización Completa
 
 1FN: Todos los atributos son atómicos
 2FN: No hay dependencias parciales
 3FN: No hay dependencias transitivas
 
-Índices Estratégicos
+###Índices Estratégicos
 sqlCREATE INDEX idx_sales_date ON sales(SalesDate);
 CREATE INDEX idx_sales_customer ON sales(CustomerID);
 CREATE INDEX idx_sales_product ON sales(ProductID);
@@ -96,7 +97,7 @@ Justificación: Mejora significativamente el performance de consultas frecuentes
 Claves Foráneas con Cascada
 sqlFOREIGN KEY (CustomerID) REFERENCES customers(CustomerID)
 Justificación: Mantiene integridad referencial y previene datos huérfanos.
-3. Decisiones de Diseño de Código
+###3. Decisiones de Diseño de Código
 Separación de Responsabilidades
 
 Models: Solo lógica de dominio y validación
@@ -139,45 +140,45 @@ pythonclass AnalyticsService:
     
     def get_geographic_sales_analysis(self):
         # Análisis geográfico especializado
-Instalación y Uso
+##Instalación y Uso
 Prerrequisitos
 
 Python 3.8+
 MySQL 8.0+
 Git
 
-Instalación
+##Instalación
 bash# 1. Clonar repositorio
 git clone <url-del-repositorio>
 cd sistema_ventas_comestibles
 
-# 2. Crear entorno virtual
+### 2. Crear entorno virtual
 python -m venv venv
 source venv/bin/activate  # Linux/Mac
 venv\Scripts\activate     # Windows
 
-# 3. Instalar dependencias
+### 3. Instalar dependencias
 pip install -r requirements.txt
 
-# 4. Configurar variables de entorno
+### 4. Configurar variables de entorno
 cp .env.example .env
-# Editar .env con tus credenciales de BD
+### Editar .env con tus credenciales de BD
 
-# 5. Crear base de datos
+### 5. Crear base de datos
 mysql -u root -p < sql/create_tables.sql
 
-# 6. Cargar datos (ajustar rutas en load_data.sql)
+### 6. Cargar datos (ajustar rutas en load_data.sql)
 mysql -u root -p < sql/load_data.sql
 Uso Básico
 pythonfrom src.models.product import Product
 from src.models.sale import Sale
 from src.services.analytics_service import AnalyticsService
 
-# Crear producto
+### Crear producto
 producto = Product(1, "Manzanas", 2.50, 1, "Premium")
 print(producto.apply_discount(10))  # Aplicar 10% descuento
 
-# Análisis de ventas
+### Análisis de ventas
 analytics = AnalyticsService()
 dashboard = analytics.generate_executive_dashboard()
 print(dashboard['general_metrics'])
@@ -185,10 +186,10 @@ Ejecutar Pruebas
 bash# Todas las pruebas
 pytest tests/ -v
 
-# Pruebas específicas
+### Pruebas específicas
 pytest tests/test_models.py -v
 
-# Con cobertura
+### Con cobertura
 pytest tests/ --cov=src
 Análisis de Rendimiento
 El sistema está optimizado para:
@@ -206,7 +207,7 @@ Réplicas de lectura: Para análisis intensivos
 Cache: Redis para consultas frecuentes
 Microservicios: Cada modelo puede evolucionar independientemente
 
-Contribución
+##Contribución
 
 Fork del proyecto
 Crear rama feature (git checkout -b feature/nueva-funcionalidad)
