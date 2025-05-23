@@ -49,7 +49,7 @@ Sistema robusto y escalable desarrollado para una cadena de tiendas de comestibl
 ### **1. Decisiones Arquitectónicas**
 
 #### **Patrón Singleton para Conexión de BD**
-```python
+
 class DatabaseConnection:
     _instance = None
     
@@ -75,7 +75,7 @@ pythonclass Product:
             self.__price = Decimal(str(price))
         else:
             raise ValueError("El precio debe ser mayor a 0")
-```python
+
 
 Justificación: Protege la integridad de los datos y permite validación en tiempo de ejecución.
 Uso de Decimal para Montos
