@@ -1,0 +1,53 @@
+# Entorno virtual
+venv/
+env/
+
+# Archivos de configuración
+.env
+.env.local
+
+# Cache de Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Distribución / empaquetado
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# IDEs
+.idea/
+.vscode/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pytest
+.pytest_cache/
+
+# Logs
+*.log
+logs/
+
+# Base de datos
+*.db
+*.sqlite3
+
+# Archivos temporales
+*.tmp
+*.temp
