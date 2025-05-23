@@ -35,47 +35,6 @@ Sistema robusto y escalable desarrollado para una cadena de tiendas de comestibl
 - **Validación de lógica**: Métodos de negocio y cálculos
 
 ## ¿Cómo está organizado el proyecto?
-sistema_ventas_comestibles/
-├── data/                          # Archivos CSV con datos de ejemplo
-│   ├── countries.csv
-│   ├── cities.csv
-│   ├── categories.csv
-│   ├── products.csv
-│   ├── customers.csv
-│   ├── employees.csv
-│   └── sales.csv
-├── sql/                           # Scripts SQL
-│   ├── create_tables.sql          # Creación de estructura de BD
-│   ├── load_data.sql             # Carga de datos desde CSV
-│   └── analysis_queries.sql       # Consultas de análisis
-├── src/                          # Código fuente Python
-│   ├── models/                   # Modelos de dominio (OOP)
-│   │   ├── country.py
-│   │   ├── city.py
-│   │   ├── category.py
-│   │   ├── product.py
-│   │   ├── customer.py
-│   │   ├── employee.py
-│   │   └── sale.py
-│   ├── database/                 # Capa de acceso a datos
-│   │   └── connection.py         # Singleton para conexión DB
-│   ├── services/                 # Lógica de negocio y análisis
-│   │   ├── data_loader.py
-│   │   └── analytics_service.py
-│   └── utils/                    # Utilidades generales
-│       └── helpers.py
-├── tests/                        # Pruebas unitarias
-│   ├── test_models.py
-│   ├── test_services.py
-│   └── test_integration.py
-├── docs/                         # Documentación técnica
-│   ├── technical_documentation.md
-│   └── database_schema.md
-└── config/                       # Archivos de configuración
-├── .env
-├── .gitignore
-└── requirements.txt
-
 ### **Organización por Capas:**
 
 1. **Capa de Datos (data/)**: Archivos CSV con datos de muestra
@@ -116,6 +75,8 @@ pythonclass Product:
             self.__price = Decimal(str(price))
         else:
             raise ValueError("El precio debe ser mayor a 0")
+```python
+
 Justificación: Protege la integridad de los datos y permite validación en tiempo de ejecución.
 Uso de Decimal para Montos
 pythonself.__price = Decimal(str(price))
