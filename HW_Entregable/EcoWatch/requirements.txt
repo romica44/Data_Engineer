@@ -1,0 +1,72 @@
+# ===================================================================
+# Dependencias del Sistema EcoWatch - Monitoreo Ambiental
+# ===================================================================
+
+# === BASE DE DATOS ===
+mysql-connector-python==8.2.0    # Conector MySQL oficial
+PyMySQL==1.1.0                   # Conector alternativo para MySQL
+
+# === ANÁLISIS DE DATOS ===
+pandas==2.1.3                    # Manipulación y análisis de datos
+numpy==1.24.4                    # Computación numérica
+openpyxl==3.1.2                  # Soporte para archivos Excel
+
+# === API REST ===
+fastapi==0.104.1                 # Framework web moderno para APIs
+uvicorn[standard]==0.24.0        # Servidor ASGI para FastAPI
+pydantic==2.5.0                  # Validación de datos
+
+# === CONFIGURACIÓN ===
+python-dotenv==1.0.0             # Carga de variables de entorno
+configparser==6.0.0              # Manejo de archivos de configuración
+
+# === TESTING ===
+pytest==7.4.3                    # Framework de testing
+pytest-asyncio==0.21.1           # Soporte async para pytest
+pytest-cov==4.1.0                # Cobertura de código
+unittest-xml-reporting==3.2.0    # Reportes XML para testing
+
+# === LOGGING Y MONITOREO ===
+structlog==23.2.0                # Logging estructurado
+prometheus-client==0.19.0        # Métricas de Prometheus
+
+# === UTILIDADES ===
+requests==2.31.0                 # Cliente HTTP
+python-dateutil==2.8.2           # Utilidades de fecha/hora
+pytz==2023.3                     # Zona horaria
+
+# === DESARROLLO ===
+black==23.11.0                   # Formateador de código
+flake8==6.1.0                    # Linter de código
+mypy==1.7.1                      # Type checker estático
+pre-commit==3.6.0                # Hooks de pre-commit
+
+# === DOCUMENTACIÓN ===
+sphinx==7.2.6                    # Generador de documentación
+sphinx-rtd-theme==1.3.0          # Tema para Sphinx
+
+# === DEPLOYMENT ===
+gunicorn==21.2.0                 # Servidor WSGI para producción
+docker==6.1.3                    # SDK de Docker
+
+# === OPTIONAL EXTRAS ===
+# Descomenta las siguientes líneas si necesitas funcionalidades adicionales:
+
+# plotly==5.17.0                 # Visualizaciones interactivas
+# matplotlib==3.8.2              # Gráficos estáticos
+# seaborn==0.13.0                # Visualizaciones estadísticas
+# scikit-learn==1.3.2            # Machine Learning
+# redis==5.0.1                   # Cache distribuido
+# celery==5.3.4                  # Procesamiento asíncrono
+
+# ===================================================================
+# INSTALACIÓN:
+# pip install -r requirements.txt
+#
+# PARA DESARROLLO:
+# pip install -r requirements.txt
+# pre-commit install
+#
+# PARA PRODUCCIÓN:
+# pip install --no-dev -r requirements.txt
+# ===================================================================
