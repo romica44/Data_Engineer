@@ -1,19 +1,6 @@
 """
 Sistema Principal EcoWatch - Monitoreo Ambiental Integrado
 =========================================================
-
-Punto de entrada principal del sistema que integra todos los componentes:
-- Gestión de base de datos MySQL
-- Procesamiento de logs en tiempo real
-- Caché temporal optimizado
-- Generación de reportes ejecutivos
-- API REST para consultas
-
-Uso:
-    python main.py                    # Ejecutar sistema completo
-    python main.py --demo             # Ejecutar demostración
-    python main.py --load-csv archivo.csv  # Cargar datos desde CSV
-    python main.py --api-only         # Solo servidor API
 """
 
 import sys
@@ -28,9 +15,22 @@ from datetime import datetime
 sys.path.append(str(Path(__file__).parent))
 
 # Imports del sistema EcoWatch
-from config.settings import settings
-from config.database import DatabaseConfig
-from database import DatabaseConnection, DatabaseMigrations
+from config.settings import (
+    LOGGING_CONFIG,
+    DATABASE_CONFIG,
+    CACHE_CONFIG,
+    THRESHOLDS,
+    SYSTEM_CONFIG,
+    REPORTS_CONFIG,
+    validate_config,
+    get_config_value,
+    PATHS
+)
+from config.database import (
+    DatabaseConfig,
+    initialize_database,
+    get_connection_string
+)
 from services import (
     CacheTemporalManager, 
     ProcesadorLogs, 
