@@ -170,11 +170,11 @@ class AnalyticsService:
             SELECT 
                 CASE 
                     WHEN s.Discount = 0 THEN 'No Discount'
-                    WHEN s.Discount <= 0.05 THEN '1-5%'
-                    WHEN s.Discount <= 0.10 THEN '6-10%'
-                    WHEN s.Discount <= 0.15 THEN '11-15%'
-                    WHEN s.Discount <= 0.20 THEN '16-20%'
-                    ELSE 'More than 20%'
+                    WHEN s.Discount <= 0.05 THEN '1% - 5%'
+                    WHEN s.Discount <= 0.10 THEN '6% - 10%'
+                    WHEN s.Discount <= 0.15 THEN '11% - 15%'
+                    WHEN s.Discount <= 0.20 THEN '16% - 20%'
+                    ELSE '> 20%'
                 END as discount_range,
                 COUNT(s.SalesID) as total_sales,
                 AVG(s.TotalPrice) as avg_sale_amount,
