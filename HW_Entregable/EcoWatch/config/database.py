@@ -19,7 +19,6 @@ POOL_CONFIG = {
     'pool_name': 'ecowatch_pool',
     'pool_size': 10,
     'pool_reset_session': True,
-    'pool_timeout': 30,
     'autocommit': True,
     'use_unicode': True,
     'charset': 'utf8mb4',

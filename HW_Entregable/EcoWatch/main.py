@@ -32,12 +32,9 @@ from config.database import (
     get_connection_string
 )
 from services import (
-    CacheTemporalManager, 
-    ProcesadorLogs, 
-    FuenteCSV, 
-    FuenteJSON, 
-    FuenteSimulada,
-    FuenteDatabase
+    CacheTemporalManager, ProcesadorLogs,
+    FuenteCSV, FuenteJSON, FuenteSimulada, FuenteDatabase,
+    FactoryFuentesDatos, crear_fuente_csv, crear_fuente_simulada
 )
 from reports import (
     FactoryReportes, 
@@ -46,7 +43,12 @@ from reports import (
     AnalisisTendencias,
     AnalisisComparativo
 )
-from models import Log, Sala, Sensor
+from models import (
+    Log, Sala, Sensor,
+    EstadoLog, TipoSala, EstadoSensor, TipoSensor,
+    crear_log_desde_sensores, crear_sala_basica, crear_sensor_basico,
+    validar_lote_logs, obtener_sensores_activos
+)
 from utils.decorators import benchmark, log_operation
 
 # Configurar logging
