@@ -1,0 +1,42 @@
+"""
+Módulo de datos de ventas
+Contiene los datos de muestra para el sistema de reportes
+"""
+
+datos_ventas = [
+    {"categoria": "Electrónicos", "producto": "Laptop", "precio": 1200, "cantidad": 1, "medio_venta": "Web", "vendedor": "Ana Pérez"},
+    {"categoria": "Libros", "producto": "Novela", "precio": 25, "cantidad": 2, "medio_venta": "Físico", "vendedor": "Carlos López"},
+    {"categoria": "Electrónicos", "producto": "Smartphone", "precio": 800, "cantidad": 1, "medio_venta": "Web", "vendedor": "Ana Pérez"},
+    {"categoria": "Ropa", "producto": "Camiseta", "precio": 30, "cantidad": 3, "medio_venta": "Físico", "vendedor": "Sofía Gómez"},
+    {"categoria": "Libros", "producto": "Ciencia Ficción", "precio": 20, "cantidad": 1, "medio_venta": "Web", "vendedor": "Carlos López"},
+    {"categoria": "Electrónicos", "producto": "Auriculares", "precio": 150, "cantidad": 2, "medio_venta": "Web", "vendedor": "Ana Pérez"},
+    {"categoria": "Ropa", "producto": "Pantalón", "precio": 75, "cantidad": 1, "medio_venta": "Físico", "vendedor": "Sofía Gómez"},
+    {"categoria": "Electrónicos", "producto": "Smartwatch", "precio": 300, "cantidad": 1, "medio_venta": "Web", "vendedor": "Luis Rodríguez"},
+    {"categoria": "Libros", "producto": "Poesía", "precio": 15, "cantidad": 4, "medio_venta": "Físico", "vendedor": "Carlos López"},
+    {"categoria": "Ropa", "producto": "Zapatos", "precio": 90, "cantidad": 1, "medio_venta": "Web", "vendedor": "Sofía Gómez"},
+    {"categoria": "Electrónicos", "producto": "Tablet", "precio": 450, "cantidad": 1, "medio_venta": "Físico", "vendedor": "Luis Rodríguez"},
+    {"categoria": "Libros", "producto": "Historia", "precio": 35, "cantidad": 2, "medio_venta": "Web", "vendedor": "Carlos López"},
+    {"categoria": "Ropa", "producto": "Abrigo", "precio": 120, "cantidad": 1, "medio_venta": "Físico", "vendedor": "Sofía Gómez"},
+    {"categoria": "Electrónicos", "producto": "Cámara", "precio": 550, "cantidad": 1, "medio_venta": "Web", "vendedor": "Ana Pérez"},
+    {"categoria": "Libros", "producto": "Manga", "precio": 10, "cantidad": 5, "medio_venta": "Físico", "vendedor": "Carlos López"},
+    {"categoria": "Ropa", "producto": "Bufanda", "precio": 20, "cantidad": 2, "medio_venta": "Web", "vendedor": "Luis Rodríguez"},
+    {"categoria": "Electrónicos", "producto": "Impresora", "precio": 200, "cantidad": 1, "medio_venta": "Físico", "vendedor": "Ana Pérez"},
+    {"categoria": "Libros", "producto": "Cocina", "precio": 30, "cantidad": 3, "medio_venta": "Web", "vendedor": "Carlos López"},
+    {"categoria": "Ropa", "producto": "Guantes", "precio": 15, "cantidad": 4, "medio_venta": "Físico", "vendedor": "Sofía Gómez"},
+    {"categoria": "Electrónicos", "producto": "Proyector", "precio": 700, "cantidad": 1, "medio_venta": "Web", "vendedor": "Luis Rodríguez"},
+    {"categoria": "Libros", "producto": "Arte", "precio": 40, "cantidad": 1, "medio_venta": "Físico", "vendedor": "Carlos López"},
+    {"categoria": "Ropa", "producto": "Sombrero", "precio": 25, "cantidad": 2, "medio_venta": "Web", "vendedor": "Sofía Gómez"},
+    {"categoria": "Electrónicos", "producto": "Parlantes", "precio": 100, "cantidad": 2, "medio_venta": "Físico", "vendedor": "Ana Pérez"},
+    {"categoria": "Libros", "producto": "Terror", "precio": 18, "cantidad": 3, "medio_venta": "Web", "vendedor": "Carlos López"},
+    {"categoria": "Ropa", "producto": "Calcetines", "precio": 10, "cantidad": 6, "medio_venta": "Físico", "vendedor": "Luis Rodríguez"},
+    {"categoria": "Electrónicos", "producto": "Monitor", "precio": 350, "cantidad": 1, "medio_venta": "Web", "vendedor": "Ana Pérez"},
+    {"categoria": "Libros", "producto": "Drama", "precio": 22, "cantidad": 2, "medio_venta": "Físico", "vendedor": "Carlos López"},
+    {"categoria": "Ropa", "producto": "Falda", "precio": 60, "cantidad": 1, "medio_venta": "Web", "vendedor": "Sofía Gómez"},
+    {"categoria": "Electrónicos", "producto": "Teclado", "precio": 60, "cantidad": 3, "medio_venta": "Físico", "vendedor": "Luis Rodríguez"},
+    {"categoria": "Libros", "producto": "Comedia", "precio": 12, "cantidad": 4, "medio_venta": "Web", "vendedor": "Carlos López"},
+    {"categoria": "Electrónicos", "producto": "Mouse", "precio": 25, "cantidad": 2, "medio_venta": "Web", "vendedor": "Ana Pérez"},
+    {"categoria": "Ropa", "producto": "Cinturon", "precio": 40, "cantidad": 1, "medio_venta": "Físico", "vendedor": "Sofía Gómez"},
+    {"categoria": "Libros", "producto": "Misterio", "precio": 30, "cantidad": 1, "medio_venta": "Web", "vendedor": "Carlos López"},
+    {"categoria": "Electrónicos", "producto": "Cargador", "precio": 20, "cantidad": 1, "medio_venta": "Tienda", "vendedor": "Luis Rodríguez"},
+    {"categoria": "Ropa", "producto": "Remera", "precio": 35, "cantidad": 2, "medio_venta": "Online", "vendedor": "Sofía Gómez"},
+]
