@@ -45,9 +45,6 @@ class DatabaseConnection:
         self.password = os.getenv('DB_PASSWORD')
         self.database = os.getenv('DB_NAME')
         
-        # Validar que las credenciales estén disponibles
-        if not all([self.user, self.password, self.database]):
-            raise ValueError("Faltan credenciales de base de datos en el archivo .env")
     
     def _setup_logging(self):
         """Configura el sistema de logging"""

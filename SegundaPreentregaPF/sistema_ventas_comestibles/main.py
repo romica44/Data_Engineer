@@ -356,3 +356,20 @@ class AnalyticsService:
         except Exception as e:
             self.logger.error(f"Error exportando DataFrame: {e}")
             return False
+
+if __name__ == "__main__":
+    logging.basicConfig(level=logging.INFO)  # Para ver logs si hay
+    service = AnalyticsService()
+    
+    try:
+        print("Probando conexión...")
+        info = service.db.get_connection_info()
+        print("Conexión:", info)
+
+        print("\nEjecutando análisis de productos...")
+        df = service.get_product_performance_analysis()
+        print(df.head())
+    except Exception as e:
+        print("❌ Error al ejecutar análisis:", e)
+    
+   
