@@ -18,6 +18,20 @@ Descripción: Análisis y depuración de errores en logs simulando fallos en sis
 
 ---
 
+### 🟡 Homework 3: Patrones de Diseño
+Repositorio: [`HW3`](./HW3)  
+Descripción: Supongamos que cuentas con una base de datos de muestra y necesitas generar los siguientes reportes de ventas: Total de ventas por categorías, Total de ventas, precio promedio y cantidad de productos vendidos por categoría
+Con los datos de muestra, se deberán procesar los datos necesarios para su incorporación a una herramienta de visualización.
+
+---
+
+### 🟡 Homework 4: Sistema Academico
+Repositorio: [`HW4_triggers`](./HW4_triggers/sistema_academico/)  
+Descripción: Implementar automatización en el registro de calificaciones y auditoría de eliminaciones mediante triggers. Crear funciones para calcular promedios y determinar el estado académico de los estudiantes. Generar vistas para reportes de rendimiento académico y gestión de materias.
+
+---
+
+
 ### 🟡 Proyecto Final - Primera Preentrega
 Repositorio: [`Sistema de Ventas`](./PrimeraPreentregaPF/sistema_ventas_comestibles)  
 Descripción: Sistema completo para gestión de ventas, análisis por empleado, cliente, producto y país.
@@ -28,6 +42,9 @@ Incluye:
 - Implementación en Python orientado a objetos
 - Pruebas con Pytest
 - Dashboard de métricas por consola con `colorama`
+
+### 🟡 Proyecto Final - Segunda Preentrega
+Repositorio: [`Sistema de Ventas`](./SegundaPreentregaPF/sistema_ventas_comestibles)  
 
 ---
 
